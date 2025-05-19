@@ -2,7 +2,7 @@
   padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-bottom: 140px;
+    padding-bottom: 150px;
   }
 }
 
@@ -45,10 +45,12 @@
 .reviews-slide {
   padding: 0;
   max-width: 335px;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 22px 25px;
-  background: #fff6ef;
+  background: #eac9f8;
   height: 231px !important;
+  display: flex !important;
+  flex-direction: column;
 }
 
 .reviews-rating-img {
@@ -60,7 +62,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #4b3b36;
+  color: #3a0d51;
   margin-bottom: 18px;
 }
 
@@ -69,14 +71,14 @@
   align-items: center;
   justify-content: start;
   gap: 24px;
+  margin-top: auto;
 }
 
 .reviews-name {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
-  color: #f53232;
+  color: #e15f39;
 }
 
 .reviews-list-desk {
@@ -94,12 +96,19 @@
 .reviews-list-item-desk {
   padding: 0;
   max-width: 413px;
-  border-radius: 16px;
+  width: 414px;
+  border-radius: 12px;
   padding: 22px 25px;
   background: #fff6ef;
   height: 213px;
+  display: flex;
+  flex-direction: column;
 }
 
-.reviews-list-item-puzzle {
-  padding: 0 27px;
+.reviews-list-item-box {
+  max-width: 413px;
+  width: 413px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
