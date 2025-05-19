@@ -8,21 +8,21 @@
   z-index: 10;
 
   &.scrolled {
-    background: #ffead8;
+    background: #ebbdea;
 
     .nav-list-link {
-      color: #4b3b36;
+      color: #3a0d51;
 
       &:hover,
       &.active {
-        color: #f53232;
+        color: #e15f39;
       }
     }
   }
 
   @include media(desktop) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 }
 
@@ -38,9 +38,10 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-left: auto;
 
   @include media(desktop) {
-    justify-content: center;
+    display: block;
   }
 }
 
@@ -49,17 +50,17 @@
 
   @include media(desktop) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 48px;
   }
 }
 
 .nav-list-link {
   font-family: 'Nunito', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffead8;
+  color: #3a0d51;
   transition: all 0.3s ease-in-out;
 }
 
@@ -67,11 +68,9 @@
 }
 
 .privacy-body .nav-list-link {
-  color: #4b3b36;
 }
 
 .privacy-body .menu-icon {
-  fill: #4b3b36;
 }
 
 .nav-btn {
@@ -85,9 +84,7 @@
 }
 
 .menu-icon {
-  fill: #fff6ef;
 }
 
 .menu-icon-scrolled {
-  fill: #4b3b36;
 }

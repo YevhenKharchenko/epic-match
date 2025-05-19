@@ -1,7 +1,7 @@
 .footer {
-  background: #f53232;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  background: #e15f39;
+  padding-top: 49px;
+  padding-bottom: 49px;
 
   @include media(desktop) {
     padding-top: 46px;
@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 16px;
+  gap: 22px;
 
   @include media(desktop) {
     flex-direction: row;
@@ -34,13 +34,16 @@
 .footer-link {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.5;
-  color: #4b3b36;
+  font-size: 20px;
+  color: #3a0d51;
   transition: color 0.3s ease-in-out;
 
   &:hover,
   &:focus {
+  }
+
+  @include media(desktop) {
+    font-size: 26px;
   }
 }
 
@@ -49,7 +52,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #4b3b36;
+  color: #3a0d51;
 
   @include media(desktop) {
     text-align: center;
