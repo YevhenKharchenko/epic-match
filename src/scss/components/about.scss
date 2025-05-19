@@ -2,7 +2,7 @@
   padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-bottom: 245px;
+    padding-bottom: 239px;
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
@@ -16,19 +16,20 @@
   @include media(desktop) {
     padding-left: 80px;
     padding-right: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    gap: 24px;
   }
 }
 
 .about-bg-img {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 22px;
 
   @include media(desktop) {
-    margin-bottom: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 150px;
+    left: 493px;
+    z-index: 1;
   }
 }
 
@@ -39,8 +40,21 @@
   @include media(desktop) {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 48px;
-    max-width: 629px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.about-text-wrapper {
+  background: #eac9f8;
+  border-radius: 12px;
+  padding: 18px;
+
+  @include media(desktop) {
+    max-width: 627px;
+    max-height: fit-content;
   }
 }
 
@@ -49,16 +63,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #4b3b36;
+  color: #3a0d51;
   word-break: break-word;
-
-  @include media(desktop) {
-    margin-bottom: 20px;
-  }
-}
-
-.about-span {
-  font-weight: 700;
 }
 
 .about-img {
@@ -66,9 +72,16 @@
 
   @include media(desktop) {
     display: block;
+  }
+}
+
+.about-img-glove {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
     position: absolute;
-    left: 80px;
-    bottom: 140px;
-    z-index: -1;
+    bottom: -63px;
+    left: 38px;
   }
 }
