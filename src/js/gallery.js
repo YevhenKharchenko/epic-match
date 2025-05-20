@@ -23,7 +23,7 @@ gallerySwiper = new Swiper('.gallery-swiper-container', {
   },
   breakpoints: {
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       initialSlide: 1,
     },
   },

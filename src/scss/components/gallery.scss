@@ -3,6 +3,9 @@
 
   @include media(desktop) {
     padding-bottom: 150px;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
   }
 }
 
@@ -45,13 +48,14 @@
 }
 
 .gallery-slide {
-  // max-width: 335px;
-  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
     flex-shrink: 0;
 
     &.swiper-slide-active {
+      margin-left: 65px !important;
+      margin-right: 70px !important;
       transform: scale(1.45) !important;
       z-index: 2;
     }
